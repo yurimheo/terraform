@@ -1,0 +1,34 @@
+# 테라폼 상태 파일 및 백업 파일
+*.tfstate
+*.tfstate.*
+
+# .terraform 폴더 (플러그인 및 캐시)
+.terraform/
+.terraform.lock.hcl
+
+# 변수 파일 - 민감한 정보 포함될 수 있음
+*.tfvars
+*.tfvars.json
+
+# 플랜 출력 파일
+*.tfplan
+
+# Crash 로그
+crash.log
+
+# Override 설정 파일
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform .backup 파일
+*.backup
+
+# Sensitive 자동으로 생성된 파일
+terraform.rc
+terraform.d/
+
+# 기타 민감한 정보 파일
+secret.auto.tfvars
+
