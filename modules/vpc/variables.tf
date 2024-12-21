@@ -22,6 +22,6 @@ variable "public_subnet_count" {
 variable "private_subnet_cidrs" {
   description = "List of CIDR blocks for private subnets"
   type        = list(string)
-  default     = []
+  default     = ["10.0.1.0/24", "10.0.2.0/24"] # 각 서브넷은 다른 AZ에 배치
 }
 
